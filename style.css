@@ -188,10 +188,6 @@ main,
     transparent 100%
 );
 }
- #projects {
-    min-height: 100vh;
-
- }
 
 .highlighted {
     color: white;
@@ -222,4 +218,11 @@ main,
     position:absolute;
     left:7.8rem; 
     bottom:3rem;
+}
+
+ #projects {
+    min-height: 100vh;
+}
+.add-projects {
+    
 }
