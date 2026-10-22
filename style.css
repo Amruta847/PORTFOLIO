@@ -288,13 +288,15 @@ main,
     .name-box {
         position: relative;
         top: auto;
-        bottom: auto;
+        bottom:5rem;
         left: auto;
         width: 100%;
         height: auto;
     }
 
     .MynameRole {
+        position:relative;
+        bottom:2rem;
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -316,8 +318,8 @@ main,
     height: auto;
     position: static;
     right: auto;
-    top: auto;
-    padding: 0;
+    top:auto;
+    padding: 0.5rem;
     font-size: 1rem;
     }
     .connect {
@@ -355,5 +357,12 @@ main,
 
     #projects {
         padding: 1rem;
+    }
+    .myPic {
+    position: relative;
+    bottom:6rem;
+    border:1px solid white;
+    height:15rem;
+    width:12rem;
     }
 }
