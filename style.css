@@ -224,19 +224,6 @@ main,
     bottom:3rem;
 }
 
- #projects {
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.add-projects {
-    color:white;
-    border:1px solid white;
-    height:50px;
-    width:400px;
-    
-}
 
 .myPic {
     border:1px solid white;
@@ -365,7 +352,29 @@ main,
     height:15rem;
     width:12rem;
     }
+    .add-projects {
+        font-size: 0.1rem;
+        border:1px solid white;
+        
+    }
+}
 
+ #projects {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-projects {
+    color:white;
+    height:50px;
+    width:400px;
+    position: relative;
+    bottom:16rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .education {
