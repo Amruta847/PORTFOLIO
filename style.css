@@ -352,10 +352,8 @@ main,
     height:15rem;
     width:12rem;
     }
-    .add-projects {
-        font-size: 0.1rem;
-        border:1px solid white;
-        
+    .add-projects h1 {
+        font-size: 1.5rem;
     }
 }
 
