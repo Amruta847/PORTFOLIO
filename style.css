@@ -387,4 +387,8 @@ main,
     justify-content: center;
     align-items: center;
 }
-
+.college {
+    height:18rem;
+    width:50rem;
+    border:1px solid white;
+}
