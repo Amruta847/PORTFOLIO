@@ -365,18 +365,26 @@ main,
 }
 .add-projects {
     color:white;
-    height:50px;
-    width:400px;
     position: relative;
-    bottom:16rem;
+    bottom: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#education {
+    height:100vh;
+    width:auto;
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
 }
-
-.education {
-    height:100vh;
-    width:auto;
+.eduBox {
+    color:white;
+    position: relative;
+    bottom: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
