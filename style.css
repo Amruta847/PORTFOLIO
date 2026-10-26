@@ -393,4 +393,5 @@ main,
     border:1px solid white;
     position: relative;
     bottom:8rem;
+    border-radius: 14px;
 }
