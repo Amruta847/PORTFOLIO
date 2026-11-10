@@ -203,8 +203,9 @@ main,
     width: 700px;
     position:relative;
     top:1rem;
-    right:12.2rem;
+    right:5rem;
     font-size: 1.1rem;
+
     
 
 }
@@ -400,4 +401,11 @@ main,
 #resume {
     height:100vh;
     width:100vh;
+}
+
+.photo {
+    height:20rem;
+    width:15rem;
+    border:1px solid white;
+    
 }
