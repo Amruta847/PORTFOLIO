@@ -404,9 +404,14 @@ main,
 }
 
 .photo {
-    height:20rem;
-    width:15rem;
-    border:1px solid white;
-    border-radius: 18px;
-    
+    width: 20rem;
+    height: 22rem;
+    overflow: hidden;
+    border-radius:13px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
