@@ -433,3 +433,12 @@ main,
     justify-content: center;
     align-items: center;    
 }
+
+.details {
+    height: 28rem;
+    width:35rem;
+    border-bottom: 0.085px solid #dea2a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
