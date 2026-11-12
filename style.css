@@ -437,8 +437,14 @@ main,
 .details {
     height: 28rem;
     width:35rem;
-    border-bottom: 0.1px solid rgba(150, 150, 150, 0.2);
+    border-bottom: 0.1px solid rgba(150, 150, 150, 0.2); 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.description {
+    color:grey;
+    height:10rem;
+    width:18rem;
+    border:1px solid white;
 }
