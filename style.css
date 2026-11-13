@@ -444,22 +444,30 @@ main,
 }
 
 .details {
-    height: 28rem;
+    height: 38rem;
     width:35rem;
     border-bottom: 0.1px solid rgba(150, 150, 150, 0.2); 
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     word-spacing: 5px;
     font: 15.2px;
     font-family: sans-serif, 'Caveat', 'cursive';
+    border: 1px solid white;
 }
 .description {
     color:grey;
-    height:8rem;
-    width:25rem;
-    transform: translateY(-1rem) translateX(-3rem);
+    height:150px;
+    width: 500px;
     word-spacing: 8px;
     letter-spacing: 1px;
     line-height: 1.5;
+    border: 1px solid white;
+}
+
+.connect-to {
+    height: 150px;
+    width: 500px;
+    border: 1px solid white;
 }
