@@ -422,10 +422,9 @@ main,
     height:7rem;
     width:7rem;
     border-radius:50%;
-    border: 1px solid white;
     transform: translateY(-9rem);
     flex-shrink: 0;
-    transform: translateX(9rem) translateY(-10rem);
+    transform: translateX(12rem) translateY(-10rem);
 }
 .contact-pic img {
     height: 100%;
@@ -458,8 +457,10 @@ main,
 }
 .description {
     color:grey;
-    height:10rem;
-    width:20rem;
-    border:1px solid white;
-    transform: translateY(4rem) translateX(-3rem);
+    height:8rem;
+    width:25rem;
+    transform: translateY(-1rem) translateX(-3rem);
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
