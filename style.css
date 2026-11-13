@@ -425,6 +425,7 @@ main,
     border: 1px solid white;
     transform: translateY(-9rem);
     flex-shrink: 0;
+    transform: translateX(9rem) translateY(-10rem);
 }
 .contact-pic img {
     height: 100%;
@@ -460,5 +461,5 @@ main,
     height:10rem;
     width:20rem;
     border:1px solid white;
-    transform: translateY(4rem);
+    transform: translateY(4rem) translateX(-3rem);
 }
