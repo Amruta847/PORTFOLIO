@@ -418,13 +418,21 @@ main,
     object-fit: cover;
 }
 
+
+
+#contact {
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+
 .contact-pic {
     height:7rem;
     width:7rem;
     border-radius:50%;
-    transform: translateY(-9rem);
     flex-shrink: 0;
-    transform: translateX(12rem) translateY(-10rem);
 }
 .contact-pic img {
     height: 100%;
@@ -435,14 +443,6 @@ main,
     display: block;
 }
 
-#contact {
-    height:100vh;
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;    
-}
-
 .details {
     height: 38rem;
     width:35rem;
@@ -450,7 +450,8 @@ main,
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    flex-direction: column;
+    gap: 10px;
     word-spacing: 5px;
     font: 15.2px;
     font-family: sans-serif, 'Caveat', 'cursive';
@@ -458,11 +459,12 @@ main,
 }
 .description {
     color:grey;
-    height:150px;
-    width: 500px;
+    height:100px;
+    width: 450px;
     word-spacing: 8px;
     letter-spacing: 1px;
     line-height: 1.5;
+    font-size: 0.85rem;
     border: 1px solid white;
 }
 
