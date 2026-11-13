@@ -450,10 +450,9 @@ main,
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     word-spacing: 5px;
     font: 15.2px;
-    font-family: sans-serif;
+    font-family: sans-serif, 'Caveat', 'cursive';
 }
 .description {
     color:grey;
