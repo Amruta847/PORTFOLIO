@@ -472,4 +472,13 @@ main,
     height: 150px;
     width: 500px;
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-btn {
+    height: 35px;
+    width:65px;
+    border:1px solid white;
 }
