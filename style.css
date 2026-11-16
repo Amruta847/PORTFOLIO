@@ -473,8 +473,9 @@ main,
     width: 500px;
     border: 1px solid white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    
 }
 
 
@@ -490,6 +491,10 @@ main,
     color:white;
     font-size: 0.85rem;
     background-color: #301d23;
+}
+.link-btn i {
+    margin-right: 8px;
+    display: inline-block;
 }
 
 
