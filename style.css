@@ -477,8 +477,15 @@ main,
     align-items: center;
 }
 
+
 .link-btn {
     height: 35px;
-    width:65px;
+    width:75px;
     border:1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
+
+
