@@ -480,12 +480,16 @@ main,
 
 .link-btn {
     height: 35px;
-    width:75px;
-    border:1px solid white;
+    width:80px;
+    border:1px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    color:white;
+    font-size: 0.85rem;
+    background-color: #301d23;
 }
 
 
