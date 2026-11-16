@@ -481,7 +481,7 @@ main,
 
 .link-btn {
     height: 35px;
-    width:80px;
+    width:100px;
     border:1px solid grey;
     display: flex;
     justify-content: center;
@@ -491,10 +491,12 @@ main,
     color:white;
     font-size: 0.85rem;
     background-color: #301d23;
+    font-weight: 600;
 }
 .link-btn i {
     margin-right: 8px;
     display: inline-block;
 }
+
 
 
