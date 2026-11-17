@@ -444,18 +444,17 @@ main,
 }
 
 .details {
-    height: 38rem;
+    height: 25rem;
     width:35rem;
     border-bottom: 0.1px solid rgba(150, 150, 150, 0.2); 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     word-spacing: 5px;
     font: 15.2px;
     font-family: sans-serif, 'Caveat', 'cursive';
-    border: 1px solid white;
 }
 .description {
     color:grey;
@@ -465,17 +464,15 @@ main,
     letter-spacing: 1px;
     line-height: 1.5;
     font-size: 0.85rem;
-    border: 1px solid white;
 }
 
 .connect-to {
-    height: 150px;
+    height: 65px;
     width: 500px;
-    border: 1px solid white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
+    transform: translateY(-2.5rem);    
 }
 
 
@@ -492,11 +489,17 @@ main,
     font-size: 0.85rem;
     background-color: #301d23;
     font-weight: 600;
+    transition:  0.1s ease-in-out;
 }
 .link-btn i {
     margin-right: 8px;
     display: inline-block;
 }
+
+.link-btn:hover {
+    transform: translateY(-4px);
+}
+
 
 
 
