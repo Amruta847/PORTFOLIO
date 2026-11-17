@@ -522,6 +522,11 @@ main,
     height:100px;
     width:100px;
     border:1px solid white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 
