@@ -508,7 +508,7 @@ main,
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #e8460c;
+    color: #8f3c1e;
     font-size: 0.7rem;
     font-style: Monospace;
     text-transform: uppercase;
@@ -517,6 +517,11 @@ main,
 .place {
     height: 1rem;
     width: 12rem;
+}
+.edu-icon {
+    height:100px;
+    width:100px;
+    border:1px solid white;
 }
 
 
