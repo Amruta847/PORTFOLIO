@@ -392,12 +392,13 @@ main,
 .college {
     height:12rem;
     width:60rem;
-    border:1px solid white;
+    border:1px solid grey;
     position: relative;
     bottom:8rem;
     border-radius: 14px;
     color:white;
     padding:22px;
+    background-color:#170300;
 }
 
 #resume {
@@ -505,12 +506,12 @@ main,
     width:20rem;
     border:1px solid white;
     display: flex;
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
 .place {
-    height: 10px;
-    width: 3rem;
-    border:1px solid white;
+    height: 1rem;
+    width: 12rem;
     font-size: 0.85rem;
 }
 
