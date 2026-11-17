@@ -500,6 +500,19 @@ main,
     transform: translateY(-4px);
 }
 
+.edu-info {
+    height:30px;
+    width:20rem;
+    border:1px solid white;
+    display: flex;
+    
+}
+.place {
+    height: 10px;
+    width: 3rem;
+    border:1px solid white;
+    font-size: 0.85rem;
+}
 
 
 
