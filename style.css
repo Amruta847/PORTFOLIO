@@ -398,7 +398,7 @@ main,
     border-radius: 14px;
     color:white;
     background-color: #120301;
-    padding:3rem
+    padding: 2rem;
 }
 
 #resume {
@@ -512,7 +512,7 @@ main,
     font-size: 0.7rem;
     font-style: Monospace;
     text-transform: uppercase;
-
+    transform: translateX(7rem);
 }
 .place {
     height: 1rem;
@@ -527,11 +527,22 @@ main,
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-
+    transform: translateY(-2.5rem);
 }
 .course-info {
     border:1px solid white;
-    height:45px;
+    height:48px;
     width:500px;
+    transform: translateX(7rem);
 }
-
+.course-edu {
+    font-weight: 600;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+.uni-info {
+    font-family: 'Courier New', monospace;
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: grey;
+}
