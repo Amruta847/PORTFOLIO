@@ -397,8 +397,8 @@ main,
     bottom:8rem;
     border-radius: 14px;
     color:white;
-    padding:22px;
     background-color: #120301;
+    padding:3rem
 }
 
 #resume {
@@ -512,26 +512,26 @@ main,
     font-size: 0.7rem;
     font-style: Monospace;
     text-transform: uppercase;
-    transform: translateX(8rem);
+
 }
 .place {
     height: 1rem;
     width: 12rem;
 }
 .edu-icon {
-    height:100px;
-    width:100px;
+    height:70px;
+    width:70px;
     border:1px solid grey;
     font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+
 }
 .course-info {
     border:1px solid white;
     height:45px;
     width:500px;
-    transform: translateX(8rem);
 }
 
