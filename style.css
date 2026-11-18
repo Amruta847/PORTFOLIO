@@ -512,7 +512,7 @@ main,
     font-size: 0.7rem;
     font-style: Monospace;
     text-transform: uppercase;
-
+    transform: translateX(8rem);
 }
 .place {
     height: 1rem;
@@ -521,13 +521,17 @@ main,
 .edu-icon {
     height:100px;
     width:100px;
-    border:1px solid white;
+    border:1px solid grey;
     font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
-
-
+.course-info {
+    border:1px solid white;
+    height:45px;
+    width:500px;
+    transform: translateX(8rem);
+}
 
