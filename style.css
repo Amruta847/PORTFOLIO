@@ -513,6 +513,8 @@ main,
     font-style: Monospace;
     text-transform: uppercase;
     transform: translateX(7rem);
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 .place {
     height: 1rem;
