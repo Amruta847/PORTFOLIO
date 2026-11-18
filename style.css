@@ -557,3 +557,23 @@ main,
     font-size: 0.85rem;
     color: grey;
 }
+
+.course-links {
+    height: 50px;
+    width: 800px;
+    border:1px solid white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ab {
+    height:20px;
+    width:200px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#402324;
+    font-weight: 600;
+}
