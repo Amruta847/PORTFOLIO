@@ -509,7 +509,7 @@ main,
     align-items: center;
     color:#a15d0a;
     font-size: 0.7rem;
-    font-family: Arial, sans-serif; 
+     
     text-transform: uppercase;
     transform: translateX(7rem);
     letter-spacing: 2px;
@@ -580,4 +580,20 @@ main,
     width:60rem;
     border:1px solid grey;
     border-radius: 14px;
+}
+
+.certification h4 {
+
+}
+.heading-course {
+    height:30px;
+    width:100%;
+    border:1px solid grey;
+    letter-spacing: 1px;
+    color: grey;
+    font-family: Arial, sans-serif;
+    font-size: 0.6rem;
+    padding:10px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
 }
