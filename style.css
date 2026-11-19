@@ -597,3 +597,17 @@ main,
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
 }
+.full-stack {
+    height:50px;
+    width:100%;
+    border:1px solid grey;
+    font-family: Arial, sans-serif;
+    padding:10px;
+}
+.fastapi {
+    height:50px;
+    width:100%;
+    border:1px solid grey;
+    font-family: Arial, sans-serif;
+    padding:10px;
+}
