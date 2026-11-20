@@ -578,36 +578,37 @@ main,
 .certification {
     height:12rem;
     width:60rem;
-    border:1px solid grey;
     border-radius: 14px;
 }
 
-.certification h4 {
-
-}
 .heading-course {
-    height:30px;
+    height:40px;
     width:100%;
     border:1px solid grey;
     letter-spacing: 1px;
     color: grey;
     font-family: Arial, sans-serif;
     font-size: 0.6rem;
-    padding:10px;
+    padding:15px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+}
+
+.fastapi {
+    height:50px;
+    width:100%;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    font-family: Arial, sans-serif;
+    padding:10px;
 }
 .full-stack {
     height:50px;
     width:100%;
-    border:1px solid grey;
-    font-family: Arial, sans-serif;
-    padding:10px;
-}
-.fastapi {
-    height:50px;
-    width:100%;
-    border:1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
     font-family: Arial, sans-serif;
     padding:10px;
 }
