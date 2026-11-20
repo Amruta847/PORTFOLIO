@@ -576,7 +576,7 @@ main,
 }
 
 .certification {
-    height:12rem;
+    height:auto;
     width:60rem;
     border-radius: 14px;
     display:flex;
@@ -596,36 +596,89 @@ main,
     border-top-right-radius: 14px;
 }
 
-.fastapi {
-    height:50px;
-    width:100%;
-    border-left: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-    font-family: Arial, sans-serif;
-    padding:10px;
-}
 .full-stack {
     display: grid;
     grid-template-rows: auto 0fr;
     overflow: hidden;
     padding: 1.2rem;
-    border: 1px solid #c46060;
-    border-radius: 12px;
-    background: #1f0305;
+    border-bottom:1px solid grey ;
+    border-left:1px solid grey  ;
+    border-right:1px solid grey  ;
+    border-radius: 0 0 12px 12px;
+    background-color: #120301;
     transition: grid-template-rows 0.4s ease;
 }
 .certificate-title {
     display: flex;
     align-items: center;
     gap: 1rem;
-    cursor: pointer;
+    width:100%;
 }
 .certificate-title h3 {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color:white;
+}
+.certificate-title p {
+    font-family: 'Courier New', monospace;
+    color: grey;
 }
 .certificate-title span {
-    margin-left: 20rem;
+    margin-left: auto;
     font-size: 1.5rem;
+    color:white;
+}
+.certificate-title .icon {
+    height:30px;
+    width:30px;
+    border:1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36181b;
+}
+.certificate-info {
+    margin-left: 45px;
+    margin-top:10px;
+    color:grey;
+}
+.certificate-skills span {
+    margin:20px;
+    height:30px;
+    border-radius: 20px;
+    border:1px solid grey;
+    background-color: #36181b;
+    font-size: 0.85rem;
+    color:grey;
+    padding:5px;
+}
+.certificate-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-stack:hover {
+    grid-template-rows: auto 1fr;
+}
+
+.certificate-content {
+    min-height: 0;
+    overflow: hidden;
+}
+.full-stack.active {
+    grid-template-rows: auto auto;
+}
+.fastapi {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    overflow: hidden;
+    padding: 1.2rem;
+    border-bottom:1px solid grey ;
+    border-left:1px solid grey  ;
+    border-right:1px solid grey  ;
+    border-radius: 0 0 12px 12px;
+    background-color: #120301;
+    transition: grid-template-rows 0.4s ease;
 }
