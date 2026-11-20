@@ -579,6 +579,8 @@ main,
     height:12rem;
     width:60rem;
     border-radius: 14px;
+    display:flex;
+    flex-direction: column;
 }
 
 .heading-course {
@@ -604,11 +606,26 @@ main,
     padding:10px;
 }
 .full-stack {
-    height:50px;
-    width:100%;
-    border-left: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-    font-family: Arial, sans-serif;
-    padding:10px;
+    display: grid;
+    grid-template-rows: auto 0fr;
+    overflow: hidden;
+    padding: 1.2rem;
+    border: 1px solid #c46060;
+    border-radius: 12px;
+    background: #1f0305;
+    transition: grid-template-rows 0.4s ease;
+}
+.certificate-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.certificate-title h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.certificate-title span {
+    margin-left: 20rem;
+    font-size: 1.5rem;
 }
