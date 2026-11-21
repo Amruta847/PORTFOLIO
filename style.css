@@ -426,7 +426,8 @@ main,
     width:100%;
     display:flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    flex-direction: column;
 }
 
 .contact-pic {
@@ -667,9 +668,7 @@ main,
     min-height: 0;
     overflow: hidden;
 }
-.full-stack.active {
-    grid-template-rows: auto auto;
-}
+
 .fastapi {
     display: grid;
     grid-template-rows: auto 0fr;
@@ -681,4 +680,84 @@ main,
     border-radius: 0 0 12px 12px;
     background-color: #120301;
     transition: grid-template-rows 0.4s ease;
+}
+.fastapi:hover {
+    grid-template-rows: auto 1fr;
+}
+
+.div-copy {
+    height:100px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    gap: 45rem;
+}
+.copyright {
+    font-size: 1rem;
+    color:grey;
+    margin-left: 200px;
+
+}
+
+.staarr {
+    font-size: 2rem;
+    color:grey;
+}
+.skill-track {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    gap:2rem;
+    overflow: hidden;
+    width: 100%;
+    width: max-content;
+    animation: moveSkills 25s linear infinite;
+}
+@keyframes moveSkills {
+    from {
+        transform: translateX(50vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.skill-track img {
+    height:15px;
+    width: 15px;
+    object-fit: contain;
+    filter: grayscale(10%);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.skill-track span {
+    color:grey;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap:15px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+.skill-track span:hover {
+    color: white;
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.skill-track span:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.skill-track span::after {
+    content: "|";
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: grey;
+}
+.skill-track:hover {
+    animation-play-state: paused;
 }
