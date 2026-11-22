@@ -781,3 +781,12 @@ main,
         display: none;
     }
 }
+.nav-btns a {
+    color: gray;
+    transition: 0.3s;
+}
+
+.nav-btns a.active {
+    color: white;
+    text-shadow: 0 0 10px white;
+}
