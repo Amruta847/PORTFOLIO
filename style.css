@@ -47,6 +47,7 @@ body {
     background-attachment: scroll;
     padding-top: 2rem;
     
+    cursor: none;
 }
 
 /* ALL SECTIONS USE THE SAME BACKGROUND */
@@ -760,4 +761,23 @@ main,
 }
 .skill-track:hover {
     animation-play-state: paused;
+}
+.cursor-glow {
+    width: 15px;
+    height: 15px;
+    background: #ff7777;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999;
+    box-shadow: 0 0 12px 4px rgba(255, 80, 80, 0.5);
+    transform: translate(-50%, -50%);
+    cursor: none;
+}
+@media (hover: none) {
+    .cursor-glow {
+        display: none;
+    }
 }

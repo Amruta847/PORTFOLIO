@@ -13,3 +13,10 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+const cursor = document.querySelector(".cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
