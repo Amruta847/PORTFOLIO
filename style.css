@@ -238,169 +238,6 @@ main,
     width:2rem;
     height:2rem;
 }
-
-@media (max-width: 48rem) {
-
-    .nav-container {
-        position:sticky;
-        top: 0.5rem;
-        z-index:1000;
-        padding-inline: 0.5rem;
-        width:100%;
-    }
-
-    .navbar {
-        width: 100%;
-        max-width: none;
-        padding: 0.5rem;
-        height: auto;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-
-    .nav-left {
-        transform: none;
-    }
-
-    .nav-btns {
-        margin-left: 0;
-        gap: 0.5rem;
-        font-size: 0.75rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .home-contents {
-        height: auto;
-        min-height: 100vh;
-        padding: 7rem 1rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .name-box {
-        position: relative;
-        top: auto;
-        bottom:5rem;
-        left: auto;
-        width: 100%;
-        height: auto;
-    }
-
-    .MynameRole {
-        position:relative;
-        bottom:2rem;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        padding-bottom: 0;
-        transform: none;
-    }
-
-    .MynameRole h1 {
-        font-size: clamp(2.5rem, 10vw, 4rem);
-    }
-
-    .star {
-        margin-left: 0;
-    }
-
-    .myContent {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    position: static;
-    right: auto;
-    top:auto;
-    padding: 0.5rem;
-    font-size: 1rem;
-    }
-    .connect {
-        position: absolute;
-        height: auto;
-        width:auto;
-        right:1rem;
-
-    }
-
-    .see-box {
-    position: static;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .see-more {
-        position:absolute;
-    }
-    html,
-    body {
-        width: 100%;
-        min-width: 0;
-        margin: 0;
-        overflow-x: clip;
-    }
-
-    #home,
-    .home-contents {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #projects {
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .myPic {
-    position: relative;
-    bottom:6rem;
-    border:1px solid white;
-    height:15rem;
-    width:12rem;
-    }
-    .add-projects h1 {
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .eduBox,
-    .college,
-    .certification,
-    .resume-box,
-    #resume h1,
-    .pro-des {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .course-details,
-    .course-info,
-    .edu-info {
-        width: 100%;
-        max-width: 100%;
-        transform: none;
-    }
-
-    .details,
-    .description,
-    .connect-to {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .copyright {
-        margin-left: 0;
-    }
-}
-
-
 #education {
     min-height: 100vh;
     width: 100%;
@@ -1092,4 +929,964 @@ main,
 }
 .div-half::after {
     pointer-events: none;
+}
+
+/* HOME PAGE RESPONSIVE */
+
+
+/* RESPONSIVE DESIGN */
+
+/* Prevent horizontal overflow */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* TABLET + MOBILE */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 1rem;
+        cursor: auto;
+    }
+
+    /* NAVBAR */
+    .nav-container {
+        position: sticky;
+        top: 0.5rem;
+        padding: 0 0.6rem;
+    }
+
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        min-height: 3.5rem;
+        padding: 0.6rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-btns {
+        margin-left: 0;
+        width: 100%;
+        gap: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    /* HOME */
+    #home {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .home-contents {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 5rem 1.2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    /* NAME + STAR */
+    .name-box {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .star {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        clip-path: path("M 50 0 C 58 30 70 42 100 50 C 70 58 58 70 50 100 C 42 70 30 58 0 50 C 30 42 42 30 50 0 Z");
+        transform: scale(0.4) translateY(-50px);
+        transform-origin: left top;
+        margin-left: 1rem;
+    }
+
+    .MynameRole {
+        width: 100%;
+        height: auto;
+        margin-left: 3rem;
+        padding-bottom: 0;
+        gap: 3px;
+        transform: none;
+    }
+
+    .MynameRole h1 {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .MynameRole p {
+        font-size: clamp(0.75rem, 3vw, 1rem);
+    }
+
+    /* DESCRIPTION */
+    .myContent {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+
+    .myContent p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+    }
+
+    /* PHOTO */
+    .photo {
+        width: min(20rem, 100%);
+        height: auto;
+        aspect-ratio: 20 / 22;
+        align-self: center;
+    }
+
+    .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* SCROLL + CONNECT */
+    .see-box {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .connect {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .nav-btns {
+        gap: 0.55rem;
+        font-size: 0.72rem;
+    }
+
+    .home-contents {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .MynameRole {
+        margin-left: 2rem;
+    }
+
+    .myContent p {
+        font-size: 0.9rem;
+    }
+}
+
+/* PROJECTS SECTION RESPONSIVE */
+
+
+/* =================================
+   PROJECTS RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    #projects {
+        width: 100%;
+        min-height: auto;
+        padding: 2rem 1rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADING */
+
+    .add-projects {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .add-projects h1 {
+        font-size: clamp(1.4rem, 4vw, 2rem);
+    }
+
+    /* DESCRIPTION */
+
+    .pro-des {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        min-height: 80px;
+        padding: 10px 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    /* STARS */
+
+    .two-star {
+        width: 100%;
+        height: 45px;
+        gap: 3rem;
+        font-size: 1.5rem;
+    }
+
+    /* PROJECT CARDS - ROW */
+
+    .show-pro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 0.7rem;
+        padding: 1rem 0;
+    }
+
+    .prodiv {
+        width: calc((100% - 1.4rem) / 3);
+        max-width: 17rem;
+        min-width: 0;
+        height: 25rem;
+        flex-shrink: 1;
+    }
+
+    /* PROJECT IMAGE */
+
+    .div-half {
+        width: 100%;
+        height: 11rem;
+    }
+
+    .div-half img {
+        width: 100%;
+        height: 10.8rem;
+        object-fit: cover;
+    }
+
+    /* PROJECT DESCRIPTION */
+
+    .middle-box {
+        width: 100%;
+        height: 11rem;
+        padding: 0.6rem;
+        overflow: hidden;
+    }
+
+    .middle-box h2 {
+        font-size: clamp(0.65rem, 2.2vw, 1rem);
+        margin: 0.3rem 0;
+        overflow-wrap: anywhere;
+    }
+
+    .middle-box p {
+        font-size: clamp(0.55rem, 1.6vw, 0.8rem);
+        line-height: 1.4;
+    }
+
+    /* BOTTOM DETAILS */
+
+    .lower-box {
+        width: 90%;
+        height: 3.5rem;
+        gap: 0.3rem;
+        font-size: clamp(0.48rem, 1.5vw, 0.7rem);
+        overflow-wrap: anywhere;
+    }
+
+    .github-link {
+        height: 30px;
+        width: 30px;
+        font-size: 0.9rem;
+    }
+
+    /* SEE ALL PROJECTS */
+
+    .link-pro {
+        width: 100%;
+        height: 50px;
+        margin-top: 1.5rem;
+        padding-right: 1rem;
+        justify-content: center;
+    }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    #projects {
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+    }
+
+    .pro-des {
+        padding: 10px 0.5rem;
+        font-size: 0.78rem;
+    }
+
+    .show-pro {
+        gap: 0.4rem;
+    }
+
+    .prodiv {
+        width: calc((100% - 0.8rem) / 3);
+        height: 23rem;
+    }
+
+    .div-half {
+        height: 8rem;
+    }
+
+    .div-half img {
+        height: 7.8rem;
+    }
+
+    .middle-box {
+        height: 11rem;
+        padding: 0.4rem;
+    }
+
+    .middle-box h2 {
+        font-size: 0.65rem;
+    }
+
+    .middle-box p {
+        font-size: 0.55rem;
+        line-height: 1.35;
+    }
+
+    .lower-box {
+        width: 95%;
+        height: 3rem;
+        font-size: 0.48rem;
+    }
+
+    .github-link {
+        height: 25px;
+        width: 25px;
+        font-size: 0.75rem;
+        top: 7px;
+        right: 7px;
+    }
+
+    .two-star {
+        gap: 1.5rem;
+    }
+}
+
+/* =====================================
+   EDUCATION RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    #education {
+        width: 100%;
+        min-height: auto;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    /* EDUCATION HEADING */
+
+    .eduBox {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .eduBox h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* COLLEGE BOX */
+
+    .college {
+        width: 100%;
+        max-width: 60rem;
+        height: auto;
+        min-height: 16rem;
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        overflow: hidden;
+    }
+
+    /* COLLEGE DATE + LOCATION */
+
+    .edu-info {
+        width: 100%;
+        height: auto;
+        min-height: 25px;
+        transform: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+
+    .place {
+        width: auto;
+        height: auto;
+    }
+
+    /* COURSE NAME */
+
+    .course-info {
+        width: 100%;
+        height: auto;
+        transform: none;
+    }
+
+    .course-edu {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .uni-info {
+        font-size: 0.75rem;
+        margin-top: 0.3rem;
+    }
+
+    /* COURSE DESCRIPTION */
+
+    .course-details {
+        width: 100%;
+        height: auto;
+        transform: none;
+        font-size: 0.78rem;
+        line-height: 1.7;
+    }
+
+    /* COURSE TAGS */
+
+    .course-links {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .ab {
+        width: auto;
+        min-height: 25px;
+        height: auto;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+        text-align: center;
+    }
+
+    /* EDUCATION ICON */
+
+    .edu-icon {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        height: 45px;
+        width: 45px;
+        font-size: 1.8rem;
+        transform: none;
+        border-radius: 12px;
+    }
+
+    /* CERTIFICATION MAIN BOX */
+
+    .certification {
+        width: 100%;
+        max-width: 60rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* CERTIFICATE HEADING */
+
+    .heading-course {
+        width: 100%;
+        height: auto;
+        min-height: 40px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading-course h4 {
+        font-size: 0.65rem;
+    }
+
+    /* FULL STACK + FASTAPI */
+
+    .full-stack,
+    .fastapi {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        min-width: 0;
+    }
+
+    .certificate-title {
+        width: 100%;
+        gap: 0.7rem;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .certificate-title .icon {
+        flex-shrink: 0;
+    }
+
+    .title-info {
+        min-width: 0;
+    }
+
+    .certificate-title h3 {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .certificate-title p {
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    .certificate-title span {
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    /* CERTIFICATE DESCRIPTION */
+
+    .certificate-info {
+        margin-left: 0;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    /* CERTIFICATE SKILLS */
+
+    .certificate-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .certificate-skills span {
+        margin: 0;
+        height: auto;
+        padding: 0.4rem 0.65rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    #education {
+        padding: 3rem 0.8rem;
+        gap: 1.2rem;
+    }
+
+    .eduBox h1 {
+        font-size: 1.5rem;
+    }
+
+    .college {
+        padding: 1rem;
+        min-height: auto;
+    }
+
+    .edu-info {
+        font-size: 0.58rem;
+    }
+
+    .course-edu {
+        font-size: 0.9rem;
+    }
+
+    .uni-info {
+        font-size: 0.68rem;
+    }
+
+    .course-details {
+        font-size: 0.72rem;
+    }
+
+    .edu-icon {
+        height: 38px;
+        width: 38px;
+        font-size: 1.5rem;
+    }
+
+    .ab {
+        font-size: 0.58rem;
+    }
+
+    .heading-course {
+        padding: 12px;
+    }
+
+    .full-stack,
+    .fastapi {
+        padding: 0.8rem;
+    }
+
+    .certificate-title {
+        gap: 0.5rem;
+    }
+
+    .certificate-title h3 {
+        font-size: 0.75rem;
+    }
+
+    .certificate-title p {
+        font-size: 0.65rem;
+    }
+
+    .certificate-title .icon {
+        height: 27px;
+        width: 27px;
+        font-size: 0.85rem;
+    }
+
+    .certificate-info {
+        font-size: 0.72rem;
+    }
+
+    .certificate-skills span {
+        font-size: 0.62rem;
+        padding: 0.35rem 0.55rem;
+    }
+}
+
+/* =====================================
+   RESUME RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 768px) {
+
+    #resume {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #resume h1 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .resume-box {
+        width: 100%;
+        max-width: 60rem;
+        height: 75vh;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    /* TOP BAR */
+
+    .resume-head {
+        width: 100%;
+        height: 55px;
+        min-height: 55px;
+        padding: 0 0.6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.4rem;
+        flex-shrink: 0;
+    }
+
+    .color-dots {
+        width: 65px;
+        min-width: 65px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .red,
+    .yellow,
+    .blue {
+        width: 11px;
+        height: 11px;
+        flex-shrink: 0;
+    }
+
+    .pdf-name {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+
+    /* OPEN + DOWNLOAD */
+
+    .pdf-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.35rem;
+        min-width: 0;
+    }
+
+    .pdf-links a {
+        width: auto;
+        height: 27px;
+        padding: 5px 7px;
+        margin: 0;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    /* PDF */
+    .pdf-container {
+        width: 100%;
+        flex: 1;
+        min-height: 0;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pdf-container iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border: none;
+    }
+    
+    
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    #resume {
+        padding: 3rem 0.6rem;
+    }
+
+    #resume h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .resume-box {
+        height: 75vh;
+        min-height: 400px;
+    }
+
+    .resume-head {
+        padding: 0 0.4rem;
+        gap: 0.2rem;
+    }
+
+    .color-dots {
+        width: 48px;
+        min-width: 48px;
+    }
+
+    .red,
+    .yellow,
+    .blue {
+        width: 8px;
+        height: 8px;
+    }
+
+    .pdf-name {
+        font-size: 0.62rem;
+    }
+
+    .pdf-links {
+        gap: 0.2rem;
+    }
+
+    .pdf-links a {
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+}
+
+/* COPYRIGHT RESPONSIVE FIX */
+
+@media (max-width: 768px) {
+
+    .div-copy {
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .copyright {
+        margin-left: 0;
+        font-size: 0.85rem;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .staarr {
+        font-size: 2rem;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .div-copy {
+        padding: 1rem 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .copyright {
+        font-size: 0.72rem;
+    }
+
+    .staarr {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .description {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        word-spacing: 4px;
+        letter-spacing: 0.5px;
+        line-height: 1.7;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .details {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .description {
+        padding: 0 0.7rem;
+        font-size: 0.78rem;
+        word-spacing: 2px;
+        letter-spacing: 0.3px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .connect-to {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 65px;
+        padding: 0 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        transform: none;
+    }
+
+    .link-btn {
+        width: 85px;
+        min-width: 0;
+        height: 35px;
+        padding: 0 0.3rem;
+        flex-shrink: 1;
+        font-size: 0.72rem;
+        white-space: nowrap;
+    }
+
+    .link-btn i {
+        margin-right: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .connect-to {
+        padding: 0 0.4rem;
+        gap: 0.45rem;
+    }
+
+    .link-btn {
+        width: 78px;
+        font-size: 0.65rem;
+    }
 }
