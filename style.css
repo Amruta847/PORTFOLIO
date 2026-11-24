@@ -998,7 +998,7 @@ main,
     height:11rem;
     width:100%;
     background-color:#06010d;
-    color:white;
+    color:#78470a;
     padding:1rem;
 }
 .lower-box {
@@ -1064,4 +1064,24 @@ main,
 .github-link:hover {
     background: #c46060;
     transform: scale(1.1);
+}
+.link-pro {
+    height:50px;
+    width:100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5rem;
+    margin-top:3rem;
+}
+.see-link {
+    color:grey;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+.see-link:hover {
+    color:#a15d0a;
+    font-size: 1rem;
 }
