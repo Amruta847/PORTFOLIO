@@ -1085,3 +1085,11 @@ main,
     color:#a15d0a;
     font-size: 1rem;
 }
+.div-half a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.div-half::after {
+    pointer-events: none;
+}
