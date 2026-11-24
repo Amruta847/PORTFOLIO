@@ -971,7 +971,9 @@ main,
     flex-direction: column;
     align-items: center;
     border:1px solid grey;
-    background-color:#06010d
+    background-color:#06010d;
+    transition: transform 0.35s ease, border-color 0.35s ease;
+    position: relative;
 }
 .div-half {
     height:11rem;
@@ -989,11 +991,15 @@ main,
     object-fit: cover;
     filter: drop-shadow(0 0 18px rgba(196, 96, 96, 0.35));
     display: block;
+    filter: drop-shadow(0 0 18px rgba(196, 96, 96, 0.35));
+    transition: all 0.4s ease;
 }
 .middle-box {
     height:11rem;
     width:100%;
     background-color:#06010d;
+    color:white;
+    padding:1rem;
 }
 .lower-box {
     height:3.5rem;
@@ -1021,4 +1027,41 @@ main,
         rgba(0, 0, 0, 0.65) 85%,
         #0b0010 100%
     );
+}
+.middle-box p {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color:grey;
+}
+.middle-box h2 {
+    margin:0.5rem;
+}
+.prodiv:hover {
+    transform: translateY(-8px);
+    border-color: #754747;
+}
+.prodiv:hover .div-half img {
+    transform: scale(1.04);
+    filter: brightness(1.12) drop-shadow(0 0 18px rgba(196, 96, 96, 0.5));
+}
+.github-link {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background: rgba(15, 1, 1, 0.85);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+.github-link:hover {
+    background: #c46060;
+    transform: scale(1.1);
 }
