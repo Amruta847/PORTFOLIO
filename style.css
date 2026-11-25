@@ -984,24 +984,24 @@ body {
     }
 
     .home-contents {
-        width: 100%;
-        height: auto;
-        min-height: 100vh;
-        padding: 5rem 1.2rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        gap: 1.5rem;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 1.2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
     }
 
-    /* NAME + STAR */
     .name-box {
-        position: relative;
-        left: auto;
-        bottom: auto;
-        width: 100%;
-        height: auto;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
     }
 
     .star {
@@ -1015,12 +1015,12 @@ body {
     }
 
     .MynameRole {
-        width: 100%;
-        height: auto;
-        margin-left: 3rem;
-        padding-bottom: 0;
-        gap: 3px;
-        transform: none;
+    width: 100%;
+    height: auto;
+    margin-left: 3rem;
+    padding-bottom: 0;
+    gap: 3px;
+    transform: none;
     }
 
     .MynameRole h1 {
@@ -1031,13 +1031,13 @@ body {
         font-size: clamp(0.75rem, 3vw, 1rem);
     }
 
-    /* DESCRIPTION */
     .myContent {
-        position: static;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        font-size: 1rem;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
+    font-size: 1rem;
     }
 
     .myContent p {
@@ -1047,11 +1047,13 @@ body {
     }
 
     /* PHOTO */
+    /* PHOTO */
     .photo {
-        width: min(20rem, 100%);
+        width: min(13rem, 100%); /* pehle 20rem tha */
         height: auto;
         aspect-ratio: 20 / 22;
         align-self: center;
+        margin-top: 3rem;
     }
 
     .photo img {
