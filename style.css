@@ -201,6 +201,9 @@ main,
 .nav-left:hover {
     color:#fad6d4;
 }
+.nav-left {
+    margin-left:1rem;
+}
 .navbar {
     background-color: #1f0305;
     width:100%;
@@ -221,8 +224,9 @@ main,
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    gap:2rem;
-    margin-left: 30%;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: 1rem;
 }
 .nav-btns a {
     text-decoration: none;
@@ -524,17 +528,20 @@ main,
 }
 
 .div-copy {
-    height:100px;
-    width:100%;
+    height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 45rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
 }
+
 .copyright {
     font-size: 1rem;
-    color:grey;
-    margin-left: 200px;
-
+    color: grey;
+    margin-left: 0;
 }
 
 .staarr {
@@ -552,6 +559,11 @@ main,
     width: 100%;
     width: max-content;
     animation: moveSkills 25s linear infinite;
+}
+.skills-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 @keyframes moveSkills {
     from {
@@ -760,14 +772,14 @@ main,
     align-items: center;
 }
 .two-star {
-    height:40px;
-    width:70%;
+    height: 40px;
+    width: 70%;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 2rem;
-    gap:50rem;
+    gap: 2rem;
 }
 .show-pro {
     height:25rem;
@@ -1921,18 +1933,4 @@ main,
         font-size: 1rem;
     }
 }
-@media (min-width: 1281px) {
-    html, body {
-        width: 100%;
-        margin: 0;
-    }
 
-    #home,
-    #projects,
-    #education,
-    #resume,
-    #contact {
-        width: 100%;
-        max-width: none;
-    }
-}
