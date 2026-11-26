@@ -1835,3 +1835,62 @@ main,
         font-size: 0.58rem;
     }
 }
+/* TABLET + DESKTOP RESPONSIVE FIX */
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+    html, body {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Education */
+    .eduBox,
+    .college,
+    .certification {
+        width: min(60rem, 100%);
+    }
+
+    .course-info,
+    .course-details,
+    .course-links {
+        max-width: 100%;
+    }
+
+    .course-info,
+    .course-details,
+    .edu-info {
+        transform: none;
+    }
+
+    /* Resume */
+    #resume h1,
+    .resume-box {
+        width: min(60rem, 100%);
+    }
+
+    /* Contact */
+    .div-copy {
+        gap: 2rem;
+        justify-content: space-around;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+    /* Navbar */
+    .nav-btns {
+        margin-left: 0;
+        gap: clamp(.7rem, 2vw, 2rem);
+    }
+
+    /* Home */
+    .connect-- {
+        transform: none;
+    }
+}
