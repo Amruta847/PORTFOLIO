@@ -1835,62 +1835,89 @@ main,
         font-size: 0.58rem;
     }
 }
-/* TABLET + DESKTOP RESPONSIVE FIX */
-@media (min-width: 1200px) and (max-width: 1600px) {
+/* =====================================
+   TABLET / NEST HUB / IPAD PRO / SURFACE PRO
+   (769px se 1280px)
+===================================== */
 
-    html, body {
+@media (min-width: 769px) and (max-width: 1280px) {
+
+    #home {
+        display: flex;
+        align-items: center;
+        padding: 5rem 0 3rem;
+    }
+
+    .home-contents {
         width: 100%;
-        max-width: 100%;
     }
 
-    section {
-        width: 100%;
-        max-width: 100%;
+    /* NAME */
+    .name-box {
+        height: auto;
+        margin-top: 2rem;
+        padding: 0 3rem;
     }
 
-    /* Education */
-    .eduBox,
-    .college,
-    .certification {
-        width: min(60rem, 100%);
+    .star {
+        height: auto;
+        padding-left: 0;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
     }
 
-    .course-info,
-    .course-details,
-    .course-links {
-        max-width: 100%;
+    .MynameRole {
+        padding-left: 0;
     }
 
-    .course-info,
-    .course-details,
-    .edu-info {
-        transform: none;
+    .MynameRole h1 {
+        font-size: 3.4rem;
     }
 
-    /* Resume */
-    #resume h1,
-    .resume-box {
-        width: min(60rem, 100%);
-    }
-
-    /* Contact */
-    .div-copy {
+    /* TEXT + PHOTO */
+    .content-pic {
+        padding: 0 3rem;
         gap: 2rem;
-        justify-content: space-around;
+        margin-top: 1.5rem;
     }
 
-    .copyright {
-        margin-left: 0;
+    .myContent {
+        flex: 1;
+        width: auto;
+        padding-left: 0;
+        gap: 1.5rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
     }
 
-    /* Navbar */
-    .nav-btns {
-        margin-left: 0;
-        gap: clamp(.7rem, 2vw, 2rem);
+    .photo {
+        width: 220px;
+        height: 260px;
     }
 
-    /* Home */
+    /* SCROLL + CONNECT */
+    .see-more {
+        position: relative;
+        height: auto;
+        padding: 2rem 3rem 0;
+    }
+
     .connect-- {
+        position: absolute;
+        left: 3rem;
+        width: auto;
+        height: auto;
         transform: none;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        max-width: 42rem;
+    }
+
+    .nav-btns {
+        margin-left: 20%;
+        gap: 1.5rem;
+        font-size: 1rem;
     }
 }
